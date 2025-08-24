@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,10 +7,83 @@
     --primary: #CBB4B0;
     --secondary: #766667;
     --tertiary: #A6A3A7;
+    font-family: "Nunito", sans-serif;
+    
 }
 
 body {
     background-color: var(--primary)
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #ECC7C5;
+    -webkit-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.74); 
+box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.74);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    line-height: 80px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headright {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navitems {
+    vertical-align: middle;
+    line-height: 80px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.navlink {
+    padding-right: 20px;
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: large;
+    
+
+}
+
+.navlink a {
+    color: #a55e6f;
+}
+
+.navlink a:hover {
+    color: #E6E6E6;
+}
+
+.socials {
+    padding-right: 20px;
+}
+
+.socialico {
+    color: #a55e6f;
+    vertical-align: middle;
+    line-height: 80px;
+    padding-right: 20px;
+}
+
+.socialico:hover {
+    color: #E6E6E6;
 }
 
 .wrapper {
@@ -66,7 +141,7 @@ body {
     height: auto;
     z-index: 2;
     position: relative;
-    top: -250px;
+    top: -140px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -76,10 +151,15 @@ body {
     width: 25%;
     height: 700px;
     position: relative;
-    background-color: var(--secondary);
-    border-radius: 20px;
+   background: #ECC7C5;
+background: -moz-linear-gradient(top, #ECC7C5 0%, #D3B0AF 50%, #A58A89 100%);
+background: -webkit-linear-gradient(top, #ECC7C5 0%, #D3B0AF 50%, #A58A89 100%);
+background: linear-gradient(to bottom, #ECC7C5 0%, #D3B0AF 50%, #A58A89 100%);
+    border-radius: 30px;
     padding-top: 50px;
     align-items: center;
+    -webkit-box-shadow: 8px 5px 15px 5px rgba(66,66,66,0.74); 
+box-shadow: 8px 5px 15px 5px rgba(66,66,66,0.74);
 }
 
 .card::before, .card::after {
@@ -108,6 +188,92 @@ body {
 
 #pfp3 {
     background: url(../images/pfp3.jpg) no-repeat center / cover;
+}
+
+.sec3 {
+    height: 100vh;
+    background-color: #A58A89;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: auto 30px;
+    align-items: center;
+}
+
+.left3 {
+    width: 40%;
+    height: auto;
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+.left3 h1 {
+    font-family: "Lexend Peta", sans-serif;
+    color:#773847;
+;
+}
+
+.right3 {
+    background: url("https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center / cover;
+    height: 75vh;
+    width: 30%;
+    border-radius: 20px;
+    line-height: 1000px;
+    vertical-align: middle;
+    
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sec4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px;
+    align-items: center;
+}
+
+.left4 {
+    background: url("https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center / cover;
+    height: 75vh;
+    width: 30%;
+    border-radius: 20px;
+    line-height: 1000px;
+    vertical-align: middle;
+    
+}
+
+.right4 {
+    height: 25vh;
+    width: 40%;
+    background-color: rgba(165, 94, 111, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: auto 30px;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2vh;
+}
+
+
+form {
+    width: 80%;
+}
+
+.classcont {
+    text-align: center;
 }
 
 /*.bottom {
